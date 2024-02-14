@@ -1,11 +1,7 @@
-import Link from "next/link";
-import { useRouter } from "next/router";
-import MainNav from "./MainNav";
 import { Container } from "react-bootstrap";
+import MainNav from "./MainNav";
 
 export default function Layout(props) {
-  const router = useRouter();
-
   return (
     <>
       <MainNav />

@@ -3,17 +3,18 @@ import Link from "next/link";
 
 export default function MainNav() {
   return (
-    <Navbar expand="lg" className="fixed-top">
-      <Container>
-        <Navbar.Brand>Lomia Wu</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+    <>
+      <Navbar expand="lg" bg="dark" data-bs-theme="dark" fixed="top">
+        <Container >
+          <Navbar.Brand>Lomia Wu</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
+            <Link href="/" passHref legacyBehavior><Nav.Link>Listings</Nav.Link></Link> {" "}
+            <Link href="/about" passHref legacyBehavior><Nav.Link>About</Nav.Link></Link>
           </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+        </Container>
+      </Navbar>
+      <br />
+      <br />
+    </>
   );
 }
