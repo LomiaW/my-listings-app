@@ -27,7 +27,7 @@ export default function Home() {
       <PageHeader text="Browse Listings : Sorted by Number of Ratings" />
       <Accordion>
         {pageData.map((listing) => (
-          <Accordion.Item eventKey={listing._id}>
+          <Accordion.Item key={listing._id} eventKey={listing._id}>
             <Accordion.Header>
               <b>{listing.name}</b> &nbsp; {listing.address.street}
             </Accordion.Header>
