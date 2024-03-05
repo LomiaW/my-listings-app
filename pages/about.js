@@ -17,10 +17,10 @@ export default function About(props) {
       <PageHeader text="About the Developer : Lomia Wu" />
       <Card>
         <Card.Body>
-          <p>Hi, I'm Lomia Wu, a full-stack developer with a passion for building web applications.</p> 
+          <p>Hi, I&apos;m Lomia Wu, a full-stack developer with a passion for building web applications.</p> 
           <p>I have experience with a variety of technologies, including JavaScript, React, Next.js, Node.js, and MongoDB. </p>
-          <p>I'm excited to be working on this project and look forward to sharing my work with you.</p>
-          <p>One of the places that I would like to visit is the: "<Link href="/listing/16050172">Beautiful Flat in Downtown Montréal</Link>"(Airbnb).
+          <p>I&apos;m excited to be working on this project and look forward to sharing my work with you.</p>
+          <p>One of the places that I would like to visit is the: &quot;<Link href="/listing/16050172">Beautiful Flat in Downtown Montréal</Link>&quot;(Airbnb).
           </p>
         </Card.Body>
         <ListingDetails listing={props.listing} />
