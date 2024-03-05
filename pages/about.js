@@ -1,4 +1,5 @@
 import { Card } from 'react-bootstrap';
+import Link from 'next/link';
 import ListingDetails from '@/components/ListingDeails';
 import PageHeader from '@/components/PageHeader';
 
@@ -19,9 +20,7 @@ export default function About(props) {
           <p>Hi, I'm Lomia Wu, a full-stack developer with a passion for building web applications.</p> 
           <p>I have experience with a variety of technologies, including JavaScript, React, Next.js, Node.js, and MongoDB. </p>
           <p>I'm excited to be working on this project and look forward to sharing my work with you.</p>
-          <p><a>One of the places that I would like to visit is the: </a>"
-              <a href="/listing/16050172">Beautiful Flat in Downtown Montréal</a>"
-              (Airbnb).
+          <p>One of the places that I would like to visit is the: "<Link href="/listing/16050172">Beautiful Flat in Downtown Montréal</Link>"(Airbnb).
           </p>
         </Card.Body>
         <ListingDetails listing={props.listing} />

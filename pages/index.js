@@ -1,4 +1,5 @@
 import useSWR from "swr";
+import Error from "next/error";
 import { useState, useEffect } from "react";
 import { Pagination, Accordion } from "react-bootstrap";
 import ListingDetails from "@/components/ListingDeails";
@@ -31,7 +32,7 @@ export default function Home() {
               <b>{listing.name}</b> &nbsp; {listing.address.street}
             </Accordion.Header>
             <Accordion.Body>
-              <ListingDetails key={listing.id} listing={listing} />
+              <ListingDetails key={listing._id} listing={listing} />
             </Accordion.Body> 
           </Accordion.Item>
         ))}
