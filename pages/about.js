@@ -5,7 +5,7 @@ import PageHeader from '@/components/PageHeader';
 
 //This function will fetch data from an external API and pass it to the page via props
 export async function getStaticProps() {
-  const res = await fetch('https://dull-jade-rhinoceros-slip.cyclic.app/api/listings/16050172');
+  const res = await fetch(`${process.env.LISTING_API_URL}/api/listings/16050172`);
   const data = await res.json()
 
   return { props: { listing: data } };

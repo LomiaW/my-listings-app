@@ -7,7 +7,7 @@ import PageHeader from "@/components/PageHeader";
 export default function Listing() {
   const router = useRouter();
   const { id } = router.query;
-  const { data, error, isLoading } = useSWR(`https://dull-jade-rhinoceros-slip.cyclic.app/api/listings/${id}`);
+  const { data, error, isLoading } = useSWR(`${process.env.LISTING_API_URL}/api/listings/${id}`);
  
   // If the page is still loading, return null.  
   if (isLoading) return null;
