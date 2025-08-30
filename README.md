@@ -1,6 +1,6 @@
 This is a simple Airbnb listings web app built with Next.js. It uses my [listing API](https://github.com/LomiaW/my-listings-api) to fetch the listings. 
 
-The app is deployed on Vercel and can be accessed [here](https://my-listings-mvgsgzald-lomias-projects-4b8a9ece.vercel.app).
+The app is deployed on Vercel and can be accessed [here](https://my-listings-7jipdwow0-lomias-projects-4b8a9ece.vercel.app).
 
 ## Getting Started
 
