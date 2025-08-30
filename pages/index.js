@@ -8,7 +8,8 @@ import PageHeader from "@/components/PageHeader";
 export default function Home() {
   const [page, setPage] = useState(1);
   const [pageData, setPageData] = useState([]);
-  const { data, error } = useSWR(`${process.env.LISTING_API_URL}/api/listings?page=${page}&perPage=10`);
+  const { data, error } = useSWR(`https://my-listings-api.onrender.com/api/listings?page=${page}&perPage=10`);
+
 
   const previous = () => setPage(page - 1);
   const next = () => setPage(page + 1);
